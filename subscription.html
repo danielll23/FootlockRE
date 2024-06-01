@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subscription.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Our PRODUCTS</title>
+</head>
+<body>
+    <div class="header">
+        <div id="menu-bar" class="fa fa-bars"></div>
+        <a href="homepage.html" class="logo">FootlockRE</a>
+        <nav>
+          <ul class="navmenu">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="shoespage.html">Shoes Page</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="subscription.html">Subscribe</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+      <div class="container">
+        <h2>Subscription Form</h2>
+        <form id="subscription-form" onsubmit="validateForm(event)">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <div id="name-error" class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="email-error" class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <div id="phone-error" class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="">Select Country</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+              <option value="Australia">Australia</option>
+              <option value="Australia">Indonesia</option>
+              <option value="Australia">Korea</option>
+              <option value="Other">Other</option>
+            </select>
+            <div id="country-error" class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <label for="terms">Terms and Conditions:</label>
+            <p>1. By subscribing to our service, you agree to abide by these terms and conditions.
+                2. The subscription fee is non-refundable and will be charged on a recurring basis according to the chosen subscription plan.
+                3. You must provide accurate and up-to-date personal information, including your name, email address, phone number, and country of residence.
+                4. You are responsible for maintaining the confidentiality of your account login credentials and must not share them with any third party.
+                5. You may cancel your subscription at any time, but no refunds will be provided for the remaining period of the subscription.
+                6. We reserve the right to modify, suspend, or terminate the subscription service without prior notice.
+                7. Any unauthorized use of the subscription service or violation of these terms and conditions may result in the termination of your subscription without refund.
+                8. We may collect and use your personal information in accordance with our privacy policy.
+                9. You acknowledge that the content provided through the subscription service is for personal use only and may not be shared, reproduced, or distributed without prior permission.
+                10. These terms and conditions are governed by the laws of [Country/State], and any disputes arising from or relating to these terms shall be subject to the exclusive jurisdiction of the courts in [Country/State].</p>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label class="checkbox-label" for="terms">I agree to the terms and conditions</label>
+            <div id="terms-error" class="error-message"></div>
+          </div>
+          <button type="submit" class="submit-btn">Subscribe</button>
+        </form>
+        </div>
+
+        <footer class="footer">
+            <div class="container-footer">
+              <div class="footer-content">
+                <div class="footer-logo">
+                  <a href="#" class="logo">FootlockRE</a>
+                </div>
+          
+                <div class="footer-social">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p>&copy; 2023 FootlockRE. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
